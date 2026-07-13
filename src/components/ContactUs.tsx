@@ -53,7 +53,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section id="contact" className="py-16 lg:py-24 bg-white relative overflow-hidden">
+    <section id="contact" className="py-20 lg:py-32 bg-white relative overflow-hidden">
       {/* Background gradients */}
       <div className="absolute top-1/4 left-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-secondary/5 rounded-full blur-3xl" />

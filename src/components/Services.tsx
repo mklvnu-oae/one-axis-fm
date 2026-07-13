@@ -136,7 +136,7 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="py-16 lg:py-24 bg-slate-50 relative overflow-hidden">
+    <section id="services" className="py-20 lg:py-32 bg-slate-50 relative overflow-hidden">
       {/* Decorative dots */}
       <div className="absolute top-10 left-10 w-40 h-40 bg-primary/5 rounded-full blur-2xl" />
       <div className="absolute bottom-10 right-10 w-40 h-40 bg-secondary/5 rounded-full blur-2xl" />

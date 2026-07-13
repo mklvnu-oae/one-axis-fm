@@ -122,12 +122,19 @@ export default function Header() {
                   key={item.id}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className={`px-1.5 xl:px-2.5 py-2 text-[11px] font-semibold rounded-md transition-all duration-200 uppercase tracking-wider whitespace-nowrap ${
+                  className={`relative px-2 xl:px-3 py-2 text-[11px] font-semibold rounded-md transition-all duration-200 uppercase tracking-wider whitespace-nowrap ${
                     activeSection === item.id
-                      ? "text-secondary font-bold"
+                      ? "text-primary font-bold"
                       : "text-slate-700 hover:text-primary hover:bg-slate-100/55"
                   }`}
                 >
+                  {activeSection === item.id && (
+                    <motion.div
+                      layoutId="activeNavIndicator"
+                      className="absolute inset-0 bg-primary/10 rounded-md -z-10"
+                      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    />
+                  )}
                   {item.name}
                 </a>
               ))}

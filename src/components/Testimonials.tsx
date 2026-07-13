@@ -49,7 +49,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-16 lg:py-24 bg-white relative overflow-hidden">
+    <section id="testimonials" className="py-20 lg:py-32 bg-white relative overflow-hidden">
       {/* Background gradients */}
       <div className="absolute top-1/4 left-10 w-60 h-60 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-10 w-60 h-60 bg-secondary/5 rounded-full blur-3xl" />

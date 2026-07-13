@@ -97,6 +97,9 @@
 .btn:hover svg {
   transform: translateX(4px);
 }
+.btn:active {
+  transform: scale(0.96);
+}
 
 .btn::before {
   content: '';

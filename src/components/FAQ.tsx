@@ -43,7 +43,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-16 lg:py-24 bg-slate-50 relative overflow-hidden">
+    <section id="faq" className="py-20 lg:py-32 bg-sky-50/50 relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

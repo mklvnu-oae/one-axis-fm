@@ -86,7 +86,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <section id="about" className="py-16 lg:py-24 bg-white relative overflow-hidden">
+    <section id="about" className="py-20 lg:py-32 bg-white relative overflow-hidden">
       {/* Decorative backdrop gradients */}
       <div className="absolute top-1/4 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-secondary/5 rounded-full blur-3xl" />
