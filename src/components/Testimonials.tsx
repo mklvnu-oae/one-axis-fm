@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import SectionCTA from "./SectionCTA";
 
 interface TestimonialItem {
   id: number;
@@ -154,6 +155,9 @@ export default function Testimonials() {
             </button>
           </div>
         </div>
+      </div>
+      <div className="relative z-20">
+        <SectionCTA />
       </div>
     </section>
   );

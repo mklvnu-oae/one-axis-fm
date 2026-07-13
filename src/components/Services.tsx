@@ -12,6 +12,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import Image from "next/image";
+import SectionCTA from "./SectionCTA";
 
 interface ServiceItem {
   id: string;
@@ -243,10 +244,15 @@ export default function Services() {
         </div>
 
         {/* Disclaimer Section */}
-        <div className="mt-12 text-center text-xs text-slate-400 font-medium max-w-3xl mx-auto leading-relaxed border-t border-slate-200/50 pt-8">
-          *All prices are indicative, exclude applicable taxes, and may vary based on manpower
-          requirement, site conditions, working hours, and scope of work.
+        <div className="mt-12 text-center border-t border-slate-200/50 pt-8">
+          <div className="inline-block bg-orange-50 text-orange-800 border border-orange-200/60 font-semibold text-xs px-6 py-3 rounded-lg shadow-sm">
+            *All prices are indicative, exclude applicable taxes, and may vary based on manpower
+            requirement, site conditions, working hours, and scope of work.
+          </div>
         </div>
+      </div>
+      <div className="relative z-20">
+        <SectionCTA />
       </div>
     </section>
   );

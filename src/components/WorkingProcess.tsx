@@ -3,13 +3,14 @@
 import { motion } from "framer-motion";
 import {
   MessageSquare,
-  Clipboard,
-  FileSpreadsheet,
+  ClipboardList,
+  Search,
   FileSignature,
-  UserCheck,
-  Activity,
+  Rocket,
+  CheckCircle2,
   HeartHandshake,
 } from "lucide-react";
+import SectionCTA from "./SectionCTA";
 
 interface ProcessStep {
   step: string;
@@ -140,6 +141,9 @@ export default function WorkingProcess() {
             })}
           </div>
         </div>
+      </div>
+      <div className="relative z-20">
+        <SectionCTA />
       </div>
     </section>
   );

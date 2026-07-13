@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ShieldAlert, Sparkles, Shield, Wrench, Bug, Building, FileText } from "lucide-react";
+import SectionCTA from "./SectionCTA";
 
 interface PriceCard {
   title: string;
@@ -204,6 +205,9 @@ export default function Pricing() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="relative z-20">
+        <SectionCTA />
       </div>
     </section>
   );

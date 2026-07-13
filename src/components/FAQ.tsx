@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronDown, HelpCircle } from "lucide-react";
+import { ChevronDown, HelpCircle, Plus, Minus } from "lucide-react";
+import SectionCTA from "./SectionCTA";
 
 interface FAQItem {
   question: string;
@@ -84,6 +85,9 @@ export default function FAQ() {
             </motion.div>
           ))}
         </div>
+      </div>
+      <div className="relative z-20">
+        <SectionCTA />
       </div>
     </section>
   );

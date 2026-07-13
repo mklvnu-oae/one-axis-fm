@@ -12,6 +12,7 @@ import {
   Store,
   Building2,
 } from "lucide-react";
+import SectionCTA from "./SectionCTA";
 
 interface IndustryItem {
   name: string;
@@ -115,6 +116,9 @@ export default function Industries() {
             );
           })}
         </div>
+      </div>
+      <div className="relative z-20">
+        <SectionCTA />
       </div>
     </section>
   );
