@@ -1,0 +1,2672 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>One Axis Enterprises – Professional Facility Management Services</title>
+  <meta name="description" content="One Axis Enterprises provides premium facility management solutions including housekeeping, security guarding, utility maintenance, pest control, and outstation property care in Bangalore & Kolar." />
+  <meta name="keywords" content="facility management Bangalore, housekeeping services Kolar, security guards Bangalore, pest control, property management Karnataka, One Axis Enterprises" />
+  <link rel="canonical" href="https://oae-pages.vercel.app" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://oae-pages.vercel.app" />
+  <meta property="og:title" content="One Axis Enterprises – Professional Facility Management" />
+  <meta property="og:description" content="Trained staff, verified guards, utility maintenance, and pest control. We Manage. You Focus." />
+  <meta property="og:image" content="https://oae-pages.vercel.app/facility_hero_bg.png" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://oae-pages.vercel.app" />
+  <meta property="twitter:title" content="One Axis Enterprises – Professional Facility Management" />
+  <meta property="twitter:description" content="Trained staff, verified guards, utility maintenance, and pest control. We Manage. You Focus." />
+  <meta property="twitter:image" content="https://oae-pages.vercel.app/facility_hero_bg.png" />
+  
+  <!-- Preconnect for Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <!-- Preload critical LCP assets -->
+  <link rel="preload" href="facility_hero_bg.png" as="image" fetchpriority="high" />
+
+  <style>
+    /* ============================================================
+       DESIGN SYSTEM & THEMES
+    ============================================================ */
+    :root {
+      /* Brand colors */
+      --brand-blue: #0f766e; /* Using premium corporate teal-blue matching JLL/CBRE FM */
+      --brand-orange: #F97316;
+      --brand-blue-glow: rgba(15, 118, 110, 0.25);
+      --brand-orange-glow: rgba(249, 117, 22, 0.25);
+      
+      /* Light Theme (Default) */
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-hover: #ffffff;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-light: #94a3b8;
+      --border-color: rgba(15, 118, 110, 0.08);
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 12px 20px -3px rgba(15, 118, 110, 0.06);
+      --shadow-lg: 0 20px 40px -4px rgba(15, 118, 110, 0.1);
+      
+      /* Glass variables */
+      --glass-bg: rgba(255, 255, 255, 0.7);
+      --glass-border: rgba(255, 255, 255, 0.4);
+      --glass-shadow: 0 8px 32px 0 rgba(15, 118, 110, 0.05);
+      
+      /* Dimensions & Animations */
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 30px;
+      --radius-full: 9999px;
+      --transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="dark"] {
+      /* Dark Theme */
+      --bg-primary: #030712;
+      --bg-secondary: #080d16;
+      --bg-card: rgba(15, 23, 42, 0.7);
+      --bg-card-hover: rgba(30, 41, 59, 0.8);
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-light: #64748b;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 12px 20px -3px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 20px 40px -4px rgba(0, 0, 0, 0.5);
+      
+      /* Glass variables */
+      --glass-bg: rgba(15, 23, 42, 0.6);
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    /* Reset & Core Setup */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-secondary);
+      overflow-x: hidden;
+      line-height: 1.6;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Accessibility Focus Style */
+    *:focus-visible {
+      outline: 2px solid var(--brand-orange);
+      outline-offset: 4px;
+    }
+
+    /* ============================================================
+       UTILITY COMPONENTS
+    ============================================================ */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin-inline: auto;
+      padding-inline: clamp(1.2rem, 4vw, 2.5rem);
+    }
+
+    .section-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--brand-orange);
+      margin-bottom: 0.75rem;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+    }
+
+    .section-desc {
+      font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+      color: var(--text-secondary);
+      max-width: 650px;
+      margin-bottom: 3.5rem;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+    .text-center .section-desc {
+      margin-inline: auto;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.85rem 1.8rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: var(--radius-md);
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .btn-blue {
+      background: linear-gradient(135deg, var(--brand-blue) 0%, #0f172a 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 15px var(--brand-blue-glow);
+    }
+    .btn-blue:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px var(--brand-blue-glow);
+    }
+
+    .btn-orange {
+      background: linear-gradient(135deg, var(--brand-orange) 0%, #c2410c 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 15px var(--brand-orange-glow);
+    }
+    .btn-orange:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px var(--brand-orange-glow);
+    }
+
+    .btn i {
+      transition: transform 0.3s ease;
+    }
+    .btn:hover i {
+      transform: translateX(4px);
+    }
+
+    /* Ripple Effect style */
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 0; height: 0;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s ease-out, height 0.6s ease-out;
+      z-index: -1;
+    }
+    .btn:active::before {
+      width: 300px;
+      height: 300px;
+    }
+
+    /* Shimmer Sweep on Premium Cards */
+    .shimmer-card {
+      position: relative;
+      overflow: hidden;
+    }
+    .shimmer-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 50%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+      transform: skewX(-20deg);
+      transition: none;
+      pointer-events: none;
+      z-index: 5;
+    }
+    .shimmer-card:hover::after {
+      left: 150%;
+      transition: left 0.8s ease-in-out;
+    }
+
+    /* ============================================================
+       BONUS: LOADER SCREEN
+    ============================================================ */
+    #loading-screen {
+      position: fixed;
+      inset: 0;
+      background-color: #030712;
+      z-index: 99999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    #loading-screen.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .loader-logo {
+      height: 60px;
+      margin-bottom: 2rem;
+      animation: pulseLogo 2s ease-in-out infinite;
+    }
+    .loader-ring {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top-color: var(--brand-orange);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes pulseLogo {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* ============================================================
+       BONUS: CURSOR GLOW & SCROLL PROGRESS
+    ============================================================ */
+    .cursor-glow {
+      position: fixed;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(15, 118, 110, 0.07) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+      mix-blend-mode: screen;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    body:hover .cursor-glow {
+      opacity: 1;
+    }
+    #scroll-progress {
+      position: fixed;
+      top: 0; left: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--brand-blue), var(--brand-orange), var(--brand-orange));
+      width: 0%;
+      z-index: 10001;
+      transition: width 0.1s linear;
+    }
+
+    /* ============================================================
+       NAVIGATION BAR
+    ============================================================ */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 76px;
+      z-index: 1000;
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--glass-border);
+      box-shadow: var(--glass-shadow);
+      transition: var(--transition);
+    }
+    .navbar.scrolled {
+      height: 66px;
+      background: var(--bg-primary);
+      box-shadow: var(--shadow-md);
+    }
+    .nav-container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      background: #ffffff;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      height: 46px;
+      box-sizing: border-box;
+      transition: var(--transition);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(15, 118, 110, 0.08);
+    }
+    .nav-logo img {
+      height: 100%;
+      width: auto;
+      transition: var(--transition);
+      display: block;
+    }
+    .navbar.scrolled .nav-logo {
+      height: 38px;
+      padding: 4px 10px;
+    }
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+    }
+    .nav-links a {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: var(--transition);
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px; left: 0;
+      width: 0; height: 2px;
+      background-color: var(--brand-orange);
+      transition: var(--transition);
+    }
+    .nav-links a:hover {
+      color: var(--text-primary);
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Theme Toggle Switch */
+    .theme-toggle-btn {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-primary);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .theme-toggle-btn:hover {
+      background: var(--bg-secondary);
+      transform: scale(1.05);
+    }
+    .theme-toggle-btn .fa-sun { display: none; }
+    [data-theme="dark"] .theme-toggle-btn .fa-moon { display: none; }
+    [data-theme="dark"] .theme-toggle-btn .fa-sun { display: block; }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--brand-blue) 0%, #115e59 100%);
+      color: #ffffff;
+      padding: 0.6rem 1.3rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: var(--radius-md);
+      box-shadow: 0 4px 10px var(--brand-blue-glow);
+      transition: var(--transition);
+    }
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 15px var(--brand-blue-glow);
+    }
+
+    /* Mobile Toggle Button */
+    .nav-toggle {
+      display: none;
+      background: transparent;
+      flex-direction: column;
+      gap: 5px;
+      width: 30px;
+      cursor: pointer;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: var(--text-primary);
+      border-radius: 3px;
+      transition: var(--transition);
+    }
+
+    @media (max-width: 991px) {
+      .nav-toggle { display: flex; }
+      .nav-links {
+        position: fixed;
+        top: 76px; left: 0; right: 0;
+        background: var(--bg-primary);
+        flex-direction: column;
+        padding: 2.5rem 1.5rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid var(--border-color);
+        transform: translateY(-120%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        box-shadow: var(--shadow-lg);
+      }
+      .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    /* ============================================================
+       HERO: PREMIUM CORPORATE SINGLE COLUMN
+    ============================================================ */
+    .hero {
+      min-height: 95vh;
+      min-height: 95dvh;
+      background-color: #030712; /* Immersive dark theme always for hero */
+      color: #ffffff;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-block: 120px 80px;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .hero-canvas {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 55%, rgba(15, 118, 110, 0.4) 0%, transparent 60%),
+                  radial-gradient(circle at 90% 20%, rgba(249, 115, 22, 0.1) 0%, transparent 50%);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .hero-glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(18px) saturate(160%);
+      -webkit-backdrop-filter: blur(18px) saturate(160%);
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 4.5rem 3.5rem;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+      transition: border-color var(--transition), transform var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      position: relative;
+      overflow: hidden;
+      max-width: 800px;
+      margin-inline: auto;
+      text-align: center;
+      z-index: 2;
+    }
+    .hero-glass-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+      background-size: 24px 24px;
+      pointer-events: none;
+    }
+    .hero-glass-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 60%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+      transform: skewX(-15deg);
+      transition: left 0.8s ease;
+      pointer-events: none;
+    }
+    .hero-glass-card:hover::after {
+      left: 150%;
+    }
+    .hero-glass-card.fm-glass {
+      border-color: rgba(249, 115, 22, 0.25);
+      background: linear-gradient(145deg, rgba(15, 118, 110, 0.2) 0%, rgba(15, 23, 42, 0.35) 100%);
+    }
+    .hero-glass-card.fm-glass:hover {
+      border-color: rgba(249, 115, 22, 0.55);
+      box-shadow: 0 30px 65px rgba(15, 118, 110, 0.3);
+    }
+    
+    .hero-badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--brand-orange);
+      background: rgba(249, 115, 22, 0.1);
+      border: 1px solid rgba(249, 115, 22, 0.2);
+      padding: 0.4rem 1.1rem;
+      border-radius: var(--radius-full);
+      align-self: center;
+    }
+
+    .hero-heading {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.15;
+    }
+    .hero-heading span.orange { color: #fb923c; }
+
+    .hero-desc {
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.6;
+      max-width: 680px;
+      margin-inline: auto;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 575px) {
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .hero-glass-card {
+        padding: 3rem 1.8rem;
+      }
+    }
+
+    /* ============================================================
+       STATISTICS SECTION (COUNTERS)
+    ============================================================ */
+    .stats-section {
+      padding-block: 5rem;
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem 1.8rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      transition: var(--transition);
+    }
+    .stat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+    .stat-number {
+      font-family: 'Outfit', sans-serif;
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--brand-blue);
+      margin-bottom: 0.5rem;
+    }
+    [data-theme="dark"] .stat-number {
+      color: var(--brand-orange);
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--text-secondary);
+    }
+
+    /* ============================================================
+       SERVICES SECTION
+    ============================================================ */
+    .services-section {
+      padding-block: 100px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.25rem;
+    }
+
+    /* Service Cards */
+    .service-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 2.75rem 2.25rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      position: relative;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(15, 118, 110, 0.2);
+    }
+    [data-theme="dark"] .service-card:hover {
+      border-color: rgba(249, 115, 22, 0.3);
+    }
+    .service-icon-wrap {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15, 118, 110, 0.05);
+      color: var(--brand-blue);
+      font-size: 1.5rem;
+      transition: var(--transition);
+    }
+    .service-card:hover .service-icon-wrap {
+      transform: scale(1.1) rotate(5deg);
+      background: var(--brand-blue);
+      color: #ffffff;
+    }
+    [data-theme="dark"] .service-icon-wrap {
+      background: rgba(249, 115, 22, 0.1);
+      color: var(--brand-orange);
+    }
+    [data-theme="dark"] .service-card:hover .service-icon-wrap {
+      background: var(--brand-orange);
+      color: #ffffff;
+    }
+
+    .service-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .service-desc {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .service-link {
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--brand-blue);
+      cursor: pointer;
+    }
+    [data-theme="dark"] .service-link {
+      color: var(--brand-orange);
+    }
+
+    /* ============================================================
+       WHY CHOOSE US SECTION (6 PREMIUM CARDS)
+    ============================================================ */
+    .why-section {
+      padding-block: 100px;
+      background-color: var(--bg-secondary);
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .why-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      gap: 1.5rem;
+    }
+    .why-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(249, 115, 22, 0.2);
+    }
+    .why-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background: rgba(249, 115, 22, 0.08);
+      color: var(--brand-orange);
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .why-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .why-card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .why-card-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ============================================================
+       INDUSTRIES WE SERVE (ICON CARDS)
+    ============================================================ */
+    .industries-section {
+      padding-block: 100px;
+    }
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .industry-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 2.25rem 1.5rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.1rem;
+    }
+    .industry-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(15, 118, 110, 0.2);
+    }
+    .industry-icon-wrap {
+      font-size: 2.2rem;
+      color: var(--brand-blue);
+      transition: var(--transition);
+    }
+    [data-theme="dark"] .industry-icon-wrap {
+      color: var(--brand-orange);
+    }
+    .industry-card:hover .industry-icon-wrap {
+      transform: scale(1.15);
+    }
+    .industry-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    /* ============================================================
+       OUR PROCESS (SCROLL TIMELINE)
+    ============================================================ */
+    .process-section {
+      padding-block: 100px;
+      background-color: var(--bg-secondary);
+      overflow: hidden;
+    }
+    .timeline-container {
+      position: relative;
+      margin-block: 4rem 2rem;
+      padding-bottom: 2rem;
+    }
+    .timeline-line {
+      position: absolute;
+      top: 30px; left: 5%;
+      width: 90%; height: 4px;
+      background: var(--border-color);
+      z-index: 1;
+    }
+    .timeline-line-fill {
+      width: 0%; height: 100%;
+      background: linear-gradient(90deg, var(--brand-blue), var(--brand-orange));
+      transition: width 0.8s ease-out;
+    }
+    .timeline-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-step {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+    }
+    .step-badge {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 3px solid var(--border-color);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .timeline-step.active .step-badge {
+      border-color: var(--brand-orange);
+      background: var(--brand-blue);
+      color: #ffffff;
+      box-shadow: 0 0 20px var(--brand-blue-glow);
+      transform: scale(1.1);
+    }
+    .step-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    @media (max-width: 991px) {
+      .timeline-line { display: none; }
+      .timeline-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .timeline-step {
+        flex-direction: row;
+        text-align: left;
+        gap: 1.5rem;
+        padding-inline: 1rem;
+      }
+      .step-badge { flex-shrink: 0; }
+    }
+
+    /* ============================================================
+       PRICING PREVIEW GRID
+    ============================================================ */
+    .pricing-section {
+      padding-block: 100px;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.25rem;
+    }
+    .pricing-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.25rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .pricing-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(15, 118, 110, 0.2);
+    }
+    .pricing-card.popular {
+      border-color: var(--brand-orange);
+    }
+    .popular-tag {
+      position: absolute;
+      top: 1.5rem; right: 1.5rem;
+      background: var(--brand-orange);
+      color: #ffffff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .pricing-header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    .pricing-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+    }
+    .price-wrap {
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+    .currency {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .price {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: var(--text-primary);
+    }
+    .period {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .pricing-features {
+      display: flex;
+      flex-direction: column;
+      gap: 0.95rem;
+      margin-bottom: 2.5rem;
+    }
+    .pricing-features li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+    }
+    .pricing-features i {
+      color: var(--brand-orange);
+      font-size: 0.95rem;
+    }
+
+    .pricing-btn {
+      margin-top: auto;
+      text-align: center;
+      width: 100%;
+    }
+    .pricing-note {
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-light);
+      max-width: 600px;
+      margin-inline: auto;
+      margin-top: 3.5rem;
+    }
+
+    /* ============================================================
+       TESTIMONIALS SECTION
+    ============================================================ */
+    .testimonials-section {
+      padding-block: 100px;
+      background-color: var(--bg-secondary);
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.25rem;
+    }
+    .testimonial-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 2.75rem 2.25rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+    .stars-wrap {
+      color: #fbbf24;
+      font-size: 1rem;
+      display: flex;
+      gap: 2px;
+    }
+    .testimonial-text {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      font-style: italic;
+    }
+    .client-profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color);
+    }
+    .client-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      color: var(--brand-blue);
+      font-size: 1.1rem;
+      border: 2px solid var(--bg-primary);
+      box-shadow: var(--shadow-sm);
+    }
+    .client-meta {
+      display: flex;
+      flex-direction: column;
+    }
+    .client-name {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--text-primary);
+    }
+    .client-org {
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    /* ============================================================
+       FAQ SECTION (ACCORDION)
+    ============================================================ */
+    .faq-section {
+      padding-block: 100px;
+    }
+    .faq-container {
+      max-width: 800px;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .faq-item {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .faq-trigger {
+      width: 100%;
+      padding: 1.5rem 2rem;
+      background: transparent;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      cursor: pointer;
+      gap: 1.5rem;
+    }
+    .faq-trigger i {
+      font-size: 0.95rem;
+      color: var(--brand-orange);
+      transition: transform 0.3s ease;
+    }
+    .faq-item.open .faq-trigger i {
+      transform: rotate(180deg);
+    }
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .faq-content-inner {
+      padding: 0 2rem 1.8rem 2rem;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ============================================================
+       CONTACT & MAP SECTION
+    ============================================================ */
+    .contact-section {
+      padding-block: 100px;
+      background-color: var(--bg-secondary);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1.8fr;
+      gap: 3.5rem;
+    }
+    .contact-info-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 2.25rem;
+    }
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .contact-item-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.8rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: center;
+      gap: 1.3rem;
+      transition: var(--transition);
+    }
+    .contact-item-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(249, 115, 22, 0.2);
+    }
+    .contact-card-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      background: rgba(249, 115, 22, 0.08);
+      color: var(--brand-orange);
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-card-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .contact-card-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-light);
+    }
+    .contact-card-val {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text-primary);
+    }
+
+
+
+    /* Contact Form */
+    .contact-form-wrap {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+    }
+    .contact-form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .form-group-full {
+      grid-column: span 2;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .form-control {
+      width: 100%;
+      padding: 0.85rem 1.1rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--brand-blue);
+      background: var(--bg-primary);
+      box-shadow: 0 0 0 3px var(--brand-blue-glow);
+    }
+    [data-theme="dark"] .form-control:focus {
+      border-color: var(--brand-orange);
+      box-shadow: 0 0 0 3px var(--brand-orange-glow);
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .contact-form {
+        grid-template-columns: 1fr;
+      }
+      .form-group-full {
+        grid-column: span 1;
+      }
+    }
+
+    /* ============================================================
+       PROFESSIONAL FOOTER
+    ============================================================ */
+    footer {
+      background-color: #030712;
+      color: rgba(255, 255, 255, 0.7);
+      padding-block: 5rem 2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.8fr repeat(2, 1.1fr) 1.3fr;
+      gap: 3.5rem;
+      margin-bottom: 4rem;
+    }
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .footer-logo-wrap {
+      background: #ffffff;
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+    }
+    .footer-logo-wrap img {
+      height: 38px;
+    }
+    .footer-desc {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .footer-socials {
+      display: flex;
+      gap: 1rem;
+    }
+    .social-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      transition: var(--transition);
+    }
+    .social-btn:hover {
+      background: var(--brand-orange);
+      border-color: var(--brand-orange);
+      transform: translateY(-2px);
+    }
+    .footer-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .footer-links a {
+      font-size: 0.88rem;
+      transition: var(--transition);
+    }
+    .footer-links a:hover {
+      color: var(--brand-orange);
+      padding-left: 3px;
+    }
+    .footer-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      font-size: 0.88rem;
+      margin-bottom: 1rem;
+    }
+    .footer-info-item i {
+      color: var(--brand-orange);
+      margin-top: 3px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    @media (max-width: 991px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+      }
+    }
+    @media (max-width: 575px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+    }
+
+    /* ============================================================
+       FLOATING ACTIONS
+    ============================================================ */
+    .floating-container {
+      position: fixed;
+      bottom: 2rem; right: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      z-index: 9999;
+    }
+    .float-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 1.4rem;
+      cursor: pointer;
+      transition: var(--transition);
+      position: relative;
+    }
+    .float-btn:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    .float-whatsapp {
+      background-color: #25D366;
+    }
+    .float-call {
+      background-color: var(--brand-blue);
+      display: none;
+    }
+    .float-scroll-top {
+      background-color: #374151;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+    }
+    .float-scroll-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .float-call { display: flex; }
+      .floating-container {
+        bottom: 1.5rem; right: 1.5rem;
+      }
+    }
+
+    /* ============================================================
+       SCROLL REVEAL CLASS
+    ============================================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.12s; }
+    .reveal-delay-2 { transition-delay: 0.24s; }
+    .reveal-delay-3 { transition-delay: 0.36s; }
+  </style>
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "One Axis Enterprises",
+      "image": "https://oae-pages.vercel.app/FM_logo.jpg",
+      "url": "https://oae-pages.vercel.app",
+      "telephone": "+919900077148",
+      "email": "contactus@oneaxisenterprises.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kolar & Bangalore",
+        "addressRegion": "Karnataka",
+        "addressCountry": "IN"
+      },
+      "description": "Premium Facility Management solutions in Karnataka."
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen" role="progressbar" aria-label="Loading Website">
+    <div class="loader-logo">
+      <img src="Home Page logo.png" alt="One Axis Logo" height="60" />
+    </div>
+    <div class="loader-ring"></div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ─── HEADER / NAVBAR ─── -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo" id="home-logo">
+        <img src="FM_logo.jpg" alt="One Axis Enterprises Logo" width="168" height="48" />
+      </a>
+      
+      <div class="nav-wrapper">
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Color Theme">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <a href="tel:+919900077148" class="nav-cta" id="nav-call-btn">📞 Call Now</a>
+
+        <!-- Mobile toggle button -->
+        <button class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ─── HERO SECTION ─── -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <canvas class="hero-canvas" id="heroCanvas"></canvas>
+      <div class="hero-overlay"></div>
+      
+      <div class="container">
+        <div class="hero-glass-card fm-glass reveal">
+          <div class="hero-badge">Property &amp; Asset Care Specialist</div>
+          <h1 class="hero-heading" id="hero-heading">
+            Professional Property &amp;<br/>
+            <span class="orange">Facility Management</span>
+          </h1>
+          <p class="hero-desc">
+            Trained housekeeping teams, verified security guards, responsive utility maintenance, pest control, and outstation NRI property custody in Bangalore and Kolar.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-orange">Request proposal <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#services" class="btn btn-blue" style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2);">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── STATISTICS SECTION ─── -->
+    <section class="stats-section" aria-label="Key Statistics">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <div class="stat-card reveal">
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-label">Verified Staff</div>
+          </div>
+
+          <div class="stat-card reveal reveal-delay-1">
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+
+          <div class="stat-card reveal reveal-delay-2">
+            <div class="stat-number" style="font-family:'Outfit', sans-serif;">24/7</div>
+            <div class="stat-label">Support Availability</div>
+          </div>
+
+          <div class="stat-card reveal reveal-delay-3">
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-label">Quality Service Guarantee</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SERVICES GRID SECTION ─── -->
+    <section class="services-section" id="services" aria-labelledby="services-title-id">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label reveal">What We Do</span>
+          <h2 class="section-title reveal reveal-delay-1" id="services-title-id">Facility Solutions</h2>
+          <p class="section-desc reveal reveal-delay-2">Professional cleaning, security guarding, utility upkeep, and property custodianship customized to your layout.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <div class="service-card shimmer-card reveal">
+            <div class="service-icon-wrap"><i class="fa-solid fa-broom"></i></div>
+            <h3 class="service-title">Housekeeping Services</h3>
+            <p class="service-desc">Complete office cleaning, dusting, sanitization, and deep janitorial maintenance to keep buildings spotless.</p>
+            <a href="#contact" class="service-link" onclick="preselectService('housekeeping')">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-card shimmer-card reveal reveal-delay-1">
+            <div class="service-icon-wrap"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="service-title">Security Guarding</h3>
+            <p class="service-desc">Verified static security guards, access control, and patrol personnel to keep your commercial premises secure.</p>
+            <a href="#contact" class="service-link" onclick="preselectService('security')">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-card shimmer-card reveal reveal-delay-2">
+            <div class="service-icon-wrap"><i class="fa-solid fa-wrench"></i></div>
+            <h3 class="service-title">Utilities Maintenance</h3>
+            <p class="service-desc">Responsive electrical support, plumbing care, generator management, and mechanical asset maintenance.</p>
+            <a href="#contact" class="service-link" onclick="preselectService('maintenance')">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-card shimmer-card reveal">
+            <div class="service-icon-wrap"><i class="fa-solid fa-bug-slash"></i></div>
+            <h3 class="service-title">Pest Control</h3>
+            <p class="service-desc">Effective termite management, anti-rodent measures, general disinfection, and insect control treatments.</p>
+            <a href="#contact" class="service-link" onclick="preselectService('pest')">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-card shimmer-card reveal reveal-delay-1">
+            <div class="service-icon-wrap"><i class="fa-solid fa-building-circle-check"></i></div>
+            <h3 class="service-title">NRI Property Care</h3>
+            <p class="service-desc">Exclusive remote custody, rental checkups, key custody, cleanups, and property audits for outstation property owners.</p>
+            <a href="#contact" class="service-link" onclick="preselectService('nri')">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-card shimmer-card reveal reveal-delay-2">
+            <div class="service-icon-wrap"><i class="fa-solid fa-people-roof"></i></div>
+            <h3 class="service-title">Integrated FM</h3>
+            <p class="service-desc">Single-point operational management combining security, janitorial, utilities, and administrative support roles.</p>
+            <a href="#contact" class="service-link" onclick="preselectService('integrated')">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WHY CHOOSE US (6 CARDS) ─── -->
+    <section class="why-section" id="why-us" aria-labelledby="why-title-id">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label reveal">Why Choose Us</span>
+          <h2 class="section-title reveal reveal-delay-1" id="why-title-id">Built For Operational Excellence</h2>
+          <p class="section-desc reveal reveal-delay-2">We pair professional, vetted personnel with responsive project management to guarantee absolute continuity of service.</p>
+        </div>
+
+        <div class="why-grid">
+          
+          <div class="why-card reveal">
+            <div class="why-icon-wrap"><i class="fa-solid fa-user-check"></i></div>
+            <div class="why-info">
+              <h3 class="why-card-title">Trained &amp; Verified Staff</h3>
+              <p class="why-card-desc">Every employee undergoes strict police checks, verification, and professional training drills.</p>
+            </div>
+          </div>
+
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-icon-wrap"><i class="fa-solid fa-user-tie"></i></div>
+            <div class="why-info">
+              <h3 class="why-card-title">Professional Supervision</h3>
+              <p class="why-card-desc">Active field managers conduct unannounced safety audits and quality checks on a regular basis.</p>
+            </div>
+          </div>
+
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-icon-wrap"><i class="fa-solid fa-sliders"></i></div>
+            <div class="why-info">
+              <h3 class="why-card-title">Customized Solutions</h3>
+              <p class="why-card-desc">We align service scope and working hours to match your exact office operations and budget guidelines.</p>
+            </div>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon-wrap"><i class="fa-solid fa-bolt"></i></div>
+            <div class="why-info">
+              <h3 class="why-card-title">Quick Response</h3>
+              <p class="why-card-desc">Our regional standby backup crew ensures backup cover and instant replacements within 24 hours.</p>
+            </div>
+          </div>
+
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-icon-wrap"><i class="fa-solid fa-receipt"></i></div>
+            <div class="why-info">
+              <h3 class="why-card-title">Transparent Pricing</h3>
+              <p class="why-card-desc">Itemized invoices, full material logs, and clear agreements — no hidden fees or surprise markups.</p>
+            </div>
+          </div>
+
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-icon-wrap"><i class="fa-solid fa-circle-check"></i></div>
+            <div class="why-info">
+              <h3 class="why-card-title">Quality Assurance</h3>
+              <p class="why-card-desc">Standard operating check sheets and service audits ensure consistent quality week after week.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── INDUSTRIES WE SERVE ─── -->
+    <section class="industries-section" id="industries" aria-labelledby="ind-title-id">
+      <div class="container text-center">
+        <span class="section-label reveal">Sectors We Support</span>
+        <h2 class="section-title reveal reveal-delay-1" id="ind-title-id">Tailored Sectors Support</h2>
+        <p class="section-desc reveal reveal-delay-2">We service diverse commercial, institutional, and residential properties with industry-specific compliances.</p>
+        
+        <div class="industries-grid">
+          
+          <div class="industry-card reveal">
+            <div class="industry-icon-wrap"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3 class="industry-title">IT Companies</h3>
+          </div>
+
+          <div class="industry-card reveal reveal-delay-1">
+            <div class="industry-icon-wrap"><i class="fa-solid fa-building"></i></div>
+            <h3 class="industry-title">Apartments</h3>
+          </div>
+
+          <div class="industry-card reveal reveal-delay-2">
+            <div class="industry-icon-wrap"><i class="fa-solid fa-hospital"></i></div>
+            <h3 class="industry-title">Hospitals</h3>
+          </div>
+
+          <div class="industry-card reveal reveal-delay-3">
+            <div class="industry-icon-wrap"><i class="fa-solid fa-school"></i></div>
+            <h3 class="industry-title">Schools</h3>
+          </div>
+
+          <div class="industry-card reveal">
+            <div class="industry-icon-wrap"><i class="fa-solid fa-warehouse"></i></div>
+            <h3 class="industry-title">Warehouses</h3>
+          </div>
+
+          <div class="industry-card reveal reveal-delay-1">
+            <div class="industry-icon-wrap"><i class="fa-solid fa-industry"></i></div>
+            <h3 class="industry-title">Manufacturing</h3>
+          </div>
+
+          <div class="industry-card reveal reveal-delay-2">
+            <div class="industry-icon-wrap"><i class="fa-solid fa-city"></i></div>
+            <h3 class="industry-title">Commercial Buildings</h3>
+          </div>
+
+          <div class="industry-card reveal reveal-delay-3">
+            <div class="industry-icon-wrap"><i class="fa-solid fa-hotel"></i></div>
+            <h3 class="industry-title">Hotels</h3>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── OUR PROCESS (SCROLL TIMELINE) ─── -->
+    <section class="process-section" id="process" aria-labelledby="proc-title-id">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label reveal">Deployment Workflow</span>
+          <h2 class="section-title reveal reveal-delay-1" id="proc-title-id">How We Onboard</h2>
+          <p class="section-desc reveal reveal-delay-2">Our structured site deployment model guarantees a smooth transition from initial inquiry to daily operation audits.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line">
+            <div class="timeline-line-fill" id="timelineFill"></div>
+          </div>
+          
+          <div class="timeline-grid">
+            
+            <div class="timeline-step reveal" data-step="1">
+              <div class="step-badge">1</div>
+              <h3 class="step-title">Contact Us</h3>
+            </div>
+
+            <div class="timeline-step reveal" data-step="2">
+              <div class="step-badge">2</div>
+              <h3 class="step-title">Site Survey</h3>
+            </div>
+
+            <div class="timeline-step reveal" data-step="3">
+              <div class="step-badge">3</div>
+              <h3 class="step-title">Proposal</h3>
+            </div>
+
+            <div class="timeline-step reveal" data-step="4">
+              <div class="step-badge">4</div>
+              <h3 class="step-title">Agreement</h3>
+            </div>
+
+            <div class="timeline-step reveal" data-step="5">
+              <div class="step-badge">5</div>
+              <h3 class="step-title">Deployment</h3>
+            </div>
+
+            <div class="timeline-step reveal" data-step="6">
+              <div class="step-badge">6</div>
+              <h3 class="step-title">Quality Audit</h3>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PRICING SECTION ─── -->
+    <section class="pricing-section" id="pricing" aria-labelledby="prc-title-id">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label reveal">Transparent Estimations</span>
+          <h2 class="section-title reveal reveal-delay-1" id="prc-title-id">Service Pricing Preview</h2>
+          <p class="section-desc reveal reveal-delay-2">Browse estimate baseline prices for key services. Tailored commercial proposals are provided post site audit.</p>
+        </div>
+
+        <div class="pricing-grid">
+          
+          <div class="pricing-card reveal">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Housekeeping</h3>
+              <div class="price-wrap">
+                <span class="currency">₹</span>
+                <span class="price">19,999</span>
+                <span class="period">/ month onwards</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-check"></i> Trained cleaning staff</li>
+              <li><i class="fa-solid fa-check"></i> Standard cleaning chemicals</li>
+              <li><i class="fa-solid fa-check"></i> Scheduled supervisor audits</li>
+              <li><i class="fa-solid fa-check"></i> Single/Double shifts</li>
+            </ul>
+            <a href="#contact" class="btn btn-blue pricing-btn" onclick="preselectService('housekeeping')">Get Proposal</a>
+          </div>
+
+          <div class="pricing-card popular reveal reveal-delay-1">
+            <span class="popular-tag">Most Demanded</span>
+            <div class="pricing-header">
+              <h3 class="pricing-title">Security Services</h3>
+              <div class="price-wrap">
+                <span class="currency">₹</span>
+                <span class="price">19,999</span>
+                <span class="period">/ month onwards</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-check"></i> Verified guarding staff</li>
+              <li><i class="fa-solid fa-check"></i> Access &amp; Material logs</li>
+              <li><i class="fa-solid fa-check"></i> Night patrolling checkups</li>
+              <li><i class="fa-solid fa-check"></i> 12 Hours Duty Cycle</li>
+            </ul>
+            <a href="#contact" class="btn btn-orange pricing-btn" onclick="preselectService('security')">Get Proposal</a>
+          </div>
+
+          <div class="pricing-card reveal reveal-delay-2">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Utility Maintenance</h3>
+              <div class="price-wrap">
+                <span class="currency">₹</span>
+                <span class="price">24,999</span>
+                <span class="period">/ month onwards</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-check"></i> Electrician &amp; Plumber support</li>
+              <li><i class="fa-solid fa-check"></i> Basic generator audits</li>
+              <li><i class="fa-solid fa-check"></i> Preventive safety checks</li>
+              <li><i class="fa-solid fa-check"></i> Consolidated AMC coverage</li>
+            </ul>
+            <a href="#contact" class="btn btn-blue pricing-btn" onclick="preselectService('maintenance')">Get Proposal</a>
+          </div>
+
+          <div class="pricing-card reveal">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Pest Control</h3>
+              <div class="price-wrap">
+                <span class="currency">₹</span>
+                <span class="price">1,500</span>
+                <span class="period">/ service onwards</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-check"></i> Organic/Chemical insect sprays</li>
+              <li><i class="fa-solid fa-check"></i> Targeted gel treatments</li>
+              <li><i class="fa-solid fa-check"></i> Rodent box deployments</li>
+              <li><i class="fa-solid fa-check"></i> Spot warranty support</li>
+            </ul>
+            <a href="#contact" class="btn btn-blue pricing-btn" onclick="preselectService('pest')">Get Proposal</a>
+          </div>
+
+          <div class="pricing-card reveal reveal-delay-1">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Property Custodians</h3>
+              <div class="price-wrap">
+                <span class="currency">₹</span>
+                <span class="price">2,500</span>
+                <span class="period">/ month onwards</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-check"></i> Dedicated key custodians</li>
+              <li><i class="fa-solid fa-check"></i> Bi-weekly property audits</li>
+              <li><i class="fa-solid fa-check"></i> Bill payments tracking</li>
+              <li><i class="fa-solid fa-check"></i> Photos &amp; Video reports</li>
+            </ul>
+            <a href="#contact" class="btn btn-blue pricing-btn" onclick="preselectService('nri')">Get Proposal</a>
+          </div>
+
+        </div>
+
+        <p class="pricing-note">
+          *Note: Displayed amounts are starting estimates. Final commercials depend on exact manpower counts, work schedules, product choices, and applicable government taxes.
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── TESTIMONIALS SECTION ─── -->
+    <section class="testimonials-section" id="testimonials" aria-label="Customer Reviews">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label reveal">Trusted Partners</span>
+          <h2 class="section-title reveal reveal-delay-1">What Our Clients Say</h2>
+          <p class="section-desc reveal reveal-delay-2">We manage facilities and infrastructure so corporate teams can focus on growth.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card reveal">
+            <div class="stars-wrap" aria-label="5 star rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "One Axis Enterprises streamlined our housekeeping operations. Their staff is extremely reliable, and their field supervisors ensure standard checks are completed on time."
+            </p>
+            <div class="client-profile">
+              <div class="client-avatar">RK</div>
+              <div class="client-meta">
+                <div class="client-name">Rajesh Kumar</div>
+                <div class="client-org">Facility Lead, TechHub Solutions</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-1">
+            <div class="stars-wrap" aria-label="5 star rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "We deployed their security team for our warehousing complex. The access log protocols are strictly followed, and their emergency backup team replaced a guard instantly when requested."
+            </p>
+            <div class="client-profile">
+              <div class="client-avatar">SM</div>
+              <div class="client-meta">
+                <div class="client-name">Sanjay Mehta</div>
+                <div class="client-org">Operations Manager, LogiCorp Warehouses</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div class="stars-wrap" aria-label="5 star rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "We're extremely pleased with their outstation property custodianship. They send us regular video walkthroughs and manage local utility repairs promptly."
+            </p>
+            <div class="client-profile">
+              <div class="client-avatar">AN</div>
+              <div class="client-meta">
+                <div class="client-name">Anjali Nair</div>
+                <div class="client-org">NRI Property Owner (US Resident)</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FAQ SECTION (ACCORDION) ─── -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-title-id">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label reveal">Support Center</span>
+          <h2 class="section-title reveal reveal-delay-1" id="faq-title-id">Frequently Asked Questions</h2>
+          <p class="section-desc reveal reveal-delay-2">Get swift answers regarding our staffing, security checks, and service customizability.</p>
+        </div>
+
+        <div class="faq-container">
+          
+          <div class="faq-item reveal">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What core facility management services do you provide?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                We provide premium facility care including corporate housekeeping, static guarding security, utilities maintenance (electrical/plumbing), pest control treatments, outstation property custodianship, and integrated facility coordination.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>How do you verify the background of your staff?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Every employee undergoes strict police checks, address verification, and background checks before undergoing professional service training and deployment.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Can we customize working hours or staff counts for our office?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Yes. We offer fully customizable operational timelines, shifts (single, double, or 24/7 coverage), and tailor the task lists to fit your facility's exact working schedule.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What is Integrated Facility Management (IFM)?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Integrated Facility Management combines housekeeping, security, utility upkeep, and vendor coordination under a single unified supervisor, simplifying billing and operations.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What geographic areas does One Axis Enterprises service?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                We actively support commercial buildings, institutional premises, residential societies, and apartments throughout <strong>Bangalore</strong> and the <strong>Kolar</strong> district of Karnataka.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What happens if a guard or housekeeper is absent?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                We maintain active regional backup crews. In the event of scheduled leave or unplanned absences, a replacement staff member is deployed instantly to ensure continuity.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>How are invoices and material supplies tracked?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                We provide fully itemized monthly reports. Consumables and chemical quantities are logged systematically, and copies are attached with monthly invoices for transparency.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Do you provide security guards for residential societies?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Yes. We deploy gatekeepers, access control checkers, and patrol security guards for residential apartments, layouts, and private villa developments.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Do you supply the cleaning chemicals and machinery?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Yes, we can provide standard cleaning machines, scrubbers, vacuums, and eco-friendly chemicals as part of our comprehensive monthly contract agreements.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>How do we request a site survey and formal commercial quote?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Fill out the contact form below or call/WhatsApp us directly. We will schedule a site visit to assess your layout and send an itemized commercial proposal within 48 hours.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT SECTION ─── -->
+    <section class="contact-section" id="contact" aria-labelledby="cnt-title-id">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Contact details & Map -->
+          <div class="contact-info-panel reveal">
+            <div>
+              <span class="section-label">Get In Touch</span>
+              <h2 class="section-title" id="cnt-title-id">Start Your Project With Us</h2>
+              <p>Reach out to discuss your property maintenance. Our team is ready to deliver a customized operational solution.</p>
+            </div>
+
+            <div class="contact-items">
+              
+              <a href="tel:+919900077148" class="contact-item-card">
+                <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-card-info">
+                  <span class="contact-card-label">Call Support</span>
+                  <span class="contact-card-val">+91 9900077148</span>
+                </div>
+              </a>
+
+              <a href="mailto:contactus@oneaxisenterprises.com" class="contact-item-card">
+                <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-card-info">
+                  <span class="contact-card-label">Email Support</span>
+                  <span class="contact-card-val">contactus@oneaxisenterprises.com</span>
+                </div>
+              </a>
+
+              <div class="contact-item-card">
+                <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-card-info">
+                  <span class="contact-card-label">Locations</span>
+                  <span class="contact-card-val">Bangalore &amp; Kolar, Karnataka</span>
+                </div>
+              </div>
+
+              <div class="contact-item-card">
+                <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="contact-card-info">
+                  <span class="contact-card-label">Working Hours</span>
+                  <span class="contact-card-val">Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-wrap reveal reveal-delay-1">
+            <h3 class="section-title" style="font-size:1.8rem; margin-bottom:1.5rem;">Request a Proposal</h3>
+            <form class="contact-form" id="quote-form">
+              
+              <div>
+                <label for="form-name" class="form-label">Full Name *</label>
+                <input type="text" class="form-control" id="form-name" placeholder="Your Name" required />
+              </div>
+
+              <div>
+                <label for="form-phone" class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" id="form-phone" placeholder="Your Phone Number" required />
+              </div>
+
+              <div class="form-group-full">
+                <label for="form-email" class="form-label">Email Address *</label>
+                <input type="email" class="form-control" id="form-email" placeholder="Your Email Address" required />
+              </div>
+
+              <div class="form-group-full">
+                <label for="form-service" class="form-label">Choose Service *</label>
+                <select class="form-control" id="form-service" required>
+                  <option value="" disabled selected>Select a Service</option>
+                  <option value="housekeeping">Housekeeping Services</option>
+                  <option value="security">Security Guarding</option>
+                  <option value="maintenance">Utilities Maintenance</option>
+                  <option value="pest">Pest Control</option>
+                  <option value="nri">NRI Property Care</option>
+                  <option value="integrated">Integrated FM</option>
+                </select>
+              </div>
+
+              <div class="form-group-full">
+                <label for="form-message" class="form-label">Requirements / Scope *</label>
+                <textarea class="form-control" id="form-message" rows="4" placeholder="Describe scope, manpower counts, or property details..." required></textarea>
+              </div>
+
+              <div class="form-group-full">
+                <button type="submit" class="btn btn-orange" id="form-submit-btn" style="width:100%;">
+                  <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── FOOTER SECTION ─── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <img src="FM_logo.jpg" alt="One Axis Logo" />
+          </div>
+          <p class="footer-desc">Professional corporate facility management and integrated property support services delivering clean, secure, and compliant environments.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="#services">Housekeeping Services</a></li>
+            <li><a href="#services">Security Guarding</a></li>
+            <li><a href="#services">Utility Maintenance</a></li>
+            <li><a href="#services">Pest Treatments</a></li>
+            <li><a href="#services">NRI Property Care</a></li>
+            <li><a href="#services">Integrated Management</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#industries">Industries Served</a></li>
+            <li><a href="#process">Deployment Process</a></li>
+            <li><a href="#pricing">Pricing Preview</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Contact Support</h3>
+          <div class="footer-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 9900077148</span>
+          </div>
+          <div class="footer-info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>contactus@oneaxisenterprises.com</span>
+          </div>
+          <div class="footer-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Bangalore &amp; Kolar, Karnataka, India</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 One Axis Enterprises. All rights reserved.</p>
+        <p>
+          <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms &amp; Conditions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WIDGETS -->
+  <div class="floating-container">
+    <a href="https://wa.me/919900077148" class="float-btn float-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919900077148" class="float-btn float-call" aria-label="Call Support Phone">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <button class="float-btn float-scroll-top" id="scrollTopBtn" aria-label="Scroll to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // ─── Loader Fadeout ───
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loading-screen');
+      setTimeout(() => {
+        loader.classList.add('hidden');
+      }, 500);
+    });
+
+    // ─── Theme Toggle Logic ───
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    
+    // Check saved theme or system preference
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    root.setAttribute('data-theme', savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = root.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // ─── Navbar Shrink & Scroll Progress ───
+    const navbar = document.getElementById('navbar');
+    const scrollProgress = document.getElementById('scroll-progress');
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const percentage = (scrolled / height) * 100;
+      
+      // Navbar shrink
+      if (scrolled > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      // Scroll progress
+      scrollProgress.style.width = percentage + '%';
+
+      // Scroll to top button
+      if (scrolled > 300) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+
+      // Process Timeline filling
+      animateTimelineFill();
+    }, { passive: true });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ─── Mobile Menu Toggle ───
+    const navToggleBtn = document.getElementById('nav-toggle-btn');
+    const navLinks = document.getElementById('nav-links');
+
+    navToggleBtn.addEventListener('click', () => {
+      const expanded = navToggleBtn.getAttribute('aria-expanded') === 'true';
+      navToggleBtn.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu when link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        navToggleBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ─── Canvas Particle Background (Hero) ───
+    const canvas = document.getElementById('heroCanvas');
+    const ctx = canvas.getContext('2d');
+    let particlesArray = [];
+    
+    function setCanvasSize() {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    }
+    setCanvasSize();
+    window.addEventListener('resize', setCanvasSize);
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2 + 1;
+        this.speedX = Math.random() * 0.4 - 0.2;
+        this.speedY = Math.random() * 0.4 - 0.2;
+        const roll = Math.random();
+        if (roll < 0.4) this.color = 'rgba(15, 118, 110, 0.4)'; // brand teal
+        else if (roll < 0.7) this.color = 'rgba(249, 115, 22, 0.4)'; // orange
+        else this.color = 'rgba(255, 255, 255, 0.3)';
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0 || this.x > canvas.width) this.speedX = -this.speedX;
+        if (this.y < 0 || this.y > canvas.height) this.speedY = -this.speedY;
+      }
+      draw() {
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    function initParticles() {
+      particlesArray = [];
+      const particleCount = Math.floor((canvas.width * canvas.height) / 18000);
+      for (let i = 0; i < Math.min(particleCount, 80); i++) {
+        particlesArray.push(new Particle());
+      }
+    }
+    initParticles();
+    window.addEventListener('resize', initParticles);
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particlesArray.length; i++) {
+        particlesArray[i].update();
+        particlesArray[i].draw();
+        
+        // Connect close particles
+        for (let j = i + 1; j < particlesArray.length; j++) {
+          const dx = particlesArray[i].x - particlesArray[j].x;
+          const dy = particlesArray[i].y - particlesArray[j].y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          
+          if (distance < 90) {
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
+            ctx.lineWidth = 0.5;
+            ctx.beginPath();
+            ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
+            ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    // ─── Cursor Glow Tracker ───
+    const cursorGlow = document.getElementById('cursorGlow');
+    window.addEventListener('mousemove', (e) => {
+      cursorGlow.style.left = e.clientX + 'px';
+      cursorGlow.style.top = e.clientY + 'px';
+    }, { passive: true });
+
+    function preselectService(val) {
+      const serviceSelect = document.getElementById('form-service');
+      if (serviceSelect) {
+        serviceSelect.value = val;
+      }
+    }
+
+    // ─── Counters Animation ───
+    const statsSection = document.querySelector('.stats-section');
+    const statNumbers = document.querySelectorAll('.stat-number');
+    let countersAnimated = false;
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !countersAnimated) {
+          animateCounters();
+          countersAnimated = true;
+        }
+      });
+    }, { threshold: 0.2 });
+
+    statsObserver.observe(statsSection);
+
+    function animateCounters() {
+      statNumbers.forEach(num => {
+        const target = parseInt(num.getAttribute('data-target'));
+        if (isNaN(target)) return; // Skip non-number stats (like 24/7)
+        
+        let count = 0;
+        const duration = 2000; // 2 seconds
+        const stepTime = Math.max(Math.floor(duration / target), 15);
+        
+        const timer = setInterval(() => {
+          count += 1;
+          num.textContent = count + '+';
+          if (count >= target) {
+            num.textContent = target + (target === 100 && num.textContent.includes('Guarantee') ? '%' : '+');
+            if (target === 100 && num.parentElement.textContent.includes('Quality')) {
+              num.textContent = '100%';
+            }
+            clearInterval(timer);
+          }
+        }, stepTime);
+      });
+    }
+
+    // ─── Process Timeline Fill Animation ───
+    const processSection = document.getElementById('process');
+    const steps = document.querySelectorAll('.timeline-step');
+    const timelineFill = document.getElementById('timelineFill');
+
+    function animateTimelineFill() {
+      const rect = processSection.getBoundingClientRect();
+      const viewHeight = window.innerHeight;
+      
+      if (rect.top < viewHeight * 0.7 && rect.bottom > 0) {
+        const totalHeight = rect.height;
+        const progress = Math.min(Math.max((viewHeight * 0.7 - rect.top) / (totalHeight * 0.5), 0), 1);
+        timelineFill.style.width = (progress * 100) + '%';
+        
+        steps.forEach((step, idx) => {
+          const activationThreshold = (idx / steps.length) * 0.9;
+          if (progress >= activationThreshold) {
+            step.classList.add('active');
+          } else {
+            step.classList.remove('active');
+          }
+        });
+      }
+    }
+
+    // ─── Scroll Reveal Observer ───
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // ─── FAQ Accordion Slider ───
+    const faqTriggers = document.querySelectorAll('.faq-trigger');
+    
+    faqTriggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.parentElement;
+        const content = trigger.nextElementSibling;
+        const isOpen = item.classList.contains('open');
+        
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+          otherItem.classList.remove('open');
+          otherItem.querySelector('.faq-content').style.maxHeight = null;
+          otherItem.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+        });
+
+        if (!isOpen) {
+          item.classList.add('open');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          trigger.setAttribute('aria-expanded', 'true');
+        } else {
+          item.classList.remove('open');
+          content.style.maxHeight = null;
+          trigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    // ─── Contact Form WhatsApp Submission ───
+    const quoteForm = document.getElementById('quote-form');
+    if (quoteForm) {
+      quoteForm.addEventListener('submit', handleFormSubmit);
+    }
+
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = document.getElementById('form-submit-btn');
+      
+      const name = document.getElementById('form-name').value.trim();
+      const phone = document.getElementById('form-phone').value.trim();
+      const email = document.getElementById('form-email').value.trim();
+      const serviceSelect = document.getElementById('form-service');
+      const serviceText = serviceSelect.value ? serviceSelect.options[serviceSelect.selectedIndex].text : 'General Inquiry';
+      const message = document.getElementById('form-message').value.trim();
+
+      if (!name || !phone || !email || !message) {
+        showErrorState(btn, 'Please fill all required fields');
+        return;
+      }
+
+      btn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Processing...`;
+      btn.disabled = true;
+
+      const whatsappText = 
+`*One Axis Enterprises - Facility Inquiry*
+----------------------------------
+*Name:* ${name}
+*Phone:* ${phone}
+*Email:* ${email}
+*Service Requested:* ${serviceText}
+
+*Requirements & Scope:*
+${message}`;
+
+      const whatsappUrl = `https://wa.me/919900077148?text=${encodeURIComponent(whatsappText)}`;
+
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+        showSuccessState(btn, form);
+      }, 800);
+    }
+
+    function showSuccessState(btn, form) {
+      btn.innerHTML = '✓ Proposal Requested! We\'ll contact you shortly.';
+      btn.style.background = '#10b981';
+      btn.style.color = '#ffffff';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        form.reset();
+        btn.innerHTML = `<i class="fa-solid fa-paper-plane"></i> Send Message`;
+        btn.style.background = '';
+        btn.style.color = '';
+        btn.disabled = false;
+      }, 4000);
+    }
+
+    function showErrorState(btn, text) {
+      btn.textContent = '⚠ ' + text;
+      btn.style.background = '#ef4444';
+      btn.style.color = '#ffffff';
+      btn.disabled = false;
+      setTimeout(() => {
+        btn.innerHTML = `<i class="fa-solid fa-paper-plane"></i> Send Message`;
+        btn.style.background = '';
+        btn.style.color = '';
+      }, 3500);
+    }
+  </script>
+</body>
+</html>
