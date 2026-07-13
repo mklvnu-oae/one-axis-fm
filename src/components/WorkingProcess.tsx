@@ -3,11 +3,11 @@
 import { motion } from "framer-motion";
 import {
   MessageSquare,
-  ClipboardList,
-  Search,
+  Clipboard,
+  FileSpreadsheet,
   FileSignature,
-  Rocket,
-  CheckCircle2,
+  UserCheck,
+  Activity,
   HeartHandshake,
 } from "lucide-react";
 import SectionCTA from "./SectionCTA";
