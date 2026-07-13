@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Target, Eye, Heart, Award, ArrowRight, ShieldCheck, Zap, Users } from "lucide-react";
-import SectionCTA from "./SectionCTA";
 
 type TabId = "mission" | "vision" | "values" | "why-us";
 
@@ -207,9 +206,6 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="relative z-20">
-        <SectionCTA />
       </div>
     </section>
   );

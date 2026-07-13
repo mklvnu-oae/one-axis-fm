@@ -11,7 +11,6 @@ import {
   Headphones,
   FileCheck,
 } from "lucide-react";
-import SectionCTA from "./SectionCTA";
 
 interface BenefitItem {
   title: string;
@@ -113,9 +112,6 @@ export default function WhyChooseUs() {
             );
           })}
         </div>
-      </div>
-      <div className="relative z-20">
-        <SectionCTA />
       </div>
     </section>
   );

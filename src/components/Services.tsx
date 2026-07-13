@@ -12,7 +12,6 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import Image from "next/image";
-import SectionCTA from "./SectionCTA";
 
 interface ServiceItem {
   id: string;
@@ -250,9 +249,6 @@ export default function Services() {
             requirement, site conditions, working hours, and scope of work.
           </div>
         </div>
-      </div>
-      <div className="relative z-20">
-        <SectionCTA />
       </div>
     </section>
   );

@@ -10,7 +10,6 @@ import {
   Activity,
   HeartHandshake,
 } from "lucide-react";
-import SectionCTA from "./SectionCTA";
 
 interface ProcessStep {
   step: string;
@@ -141,9 +140,6 @@ export default function WorkingProcess() {
             })}
           </div>
         </div>
-      </div>
-      <div className="relative z-20">
-        <SectionCTA />
       </div>
     </section>
   );
