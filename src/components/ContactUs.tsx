@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Phone, Mail, MessageSquare, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { Phone, Mail, MessageSquare, Send, CheckCircle2, AlertCircle, Clock } from "lucide-react";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -116,26 +116,39 @@ export default function ContactUs() {
                     </span>
                   </div>
                 </a>
+
+                {/* WhatsApp */}
+                <button
+                  onClick={handleWhatsAppClick}
+                  className="w-full flex items-center text-left gap-4 p-4 rounded-2xl bg-slate-50 hover:bg-emerald-50 border border-slate-100 hover:border-emerald-200 transition-all duration-300 group cursor-pointer"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                    <MessageSquare className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="block text-[10px] uppercase font-bold text-slate-400 tracking-wider">
+                      Chat with Us
+                    </span>
+                    <span className="text-sm font-bold text-slate-700">WhatsApp Support</span>
+                  </div>
+                </button>
+
+                {/* Office Hours */}
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-slate-100">
+                  <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400">
+                    <Clock className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="block text-[10px] uppercase font-bold text-slate-400 tracking-wider">
+                      Office Hours
+                    </span>
+                    <span className="text-sm font-bold text-slate-700">Mon - Sat: 9:00 AM - 6:00 PM</span>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Direct Action Buttons */}
-            <div className="grid grid-cols-2 gap-4">
-              <a
-                href="tel:+919900077148"
-                className="flex items-center justify-center gap-2 bg-gradient-primary hover:bg-gradient-primary/95 text-white font-semibold text-xs uppercase tracking-wider py-3.5 px-4 rounded-xl shadow-sm transition-transform duration-200 hover:scale-[1.02]"
-              >
-                <Phone className="w-4 h-4" />
-                Call Now
-              </a>
-              <button
-                onClick={handleWhatsAppClick}
-                className="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs uppercase tracking-wider py-3.5 px-4 rounded-xl shadow-sm transition-transform duration-200 hover:scale-[1.02] cursor-pointer"
-              >
-                <MessageSquare className="w-4 h-4" />
-                WhatsApp
-              </button>
-            </div>
+            {/* Removed standalone action buttons since WhatsApp is now in the main list */}
           </div>
 
           {/* Right Column: Enquiry Form */}

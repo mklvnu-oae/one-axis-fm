@@ -97,12 +97,12 @@ export default function WhyChooseUs() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="bg-white rounded-[20px] p-8 border border-slate-200/60 shadow-sm flex flex-col justify-between hover:-translate-y-1.5 hover:shadow-md hover:border-secondary/20 transition-all duration-400 cursor-default"
+                className="group p-8 sm:p-10 min-h-[240px] bg-white border border-slate-100 rounded-3xl hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 flex flex-col items-start gap-6"
               >
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-inner group-hover:rotate-6 group-hover:scale-110">
+                  <BenefitIcon className="w-8 h-8" />
+                </div>
                 <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-2">
-                    <BenefitIcon className="w-6 h-6" />
-                  </div>
                   <h4 className="text-lg font-bold text-primary">{benefit.title}</h4>
                   <p className="text-slate-500 text-sm leading-relaxed font-light">
                     {benefit.description}

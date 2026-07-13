@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Target, Eye, Heart, Award, ArrowRight, ShieldCheck, Zap, Users } from "lucide-react";
+import { Target, Eye, Heart, Award, ArrowRight, Users, Building, CheckCircle } from "lucide-react";
+import Image from "next/image";
 
 type TabId = "mission" | "vision" | "values" | "why-us";
 
@@ -79,9 +80,9 @@ export default function AboutUs() {
   const ActiveIcon = activeTabData.icon;
 
   const stats = [
-    { icon: Users, value: "1,500+", label: "Trained Staff" },
-    { icon: ShieldCheck, value: "99.8%", label: "Client Retention" },
-    { icon: Zap, value: "24/7", label: "Dedicated Support" },
+    { icon: Building, value: "150+", label: "Clients" },
+    { icon: Users, value: "1,500+", label: "Staff" },
+    { icon: CheckCircle, value: "3,000+", label: "Projects" },
   ];
 
   return (
@@ -122,6 +123,17 @@ export default function AboutUs() {
                 customer satisfaction, and business reputation. By letting One Axis handle daily operations,
                 our clients experience fewer disruptions, lower overhead, and peace of mind.
               </p>
+            </div>
+
+            {/* Professional Team Image */}
+            <div className="relative h-64 sm:h-72 w-full rounded-2xl overflow-hidden shadow-lg border border-slate-100 group">
+              <Image 
+                src="/housekeeping.jpg"
+                alt="Professional Facility Management Team"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500" />
             </div>
 
             {/* Stats Badges */}

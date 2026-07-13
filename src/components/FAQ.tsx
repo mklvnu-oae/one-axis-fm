@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronDown, HelpCircle, Plus, Minus } from "lucide-react";
+import { ChevronDown, HelpCircle } from "lucide-react";
 
 interface FAQItem {
   question: string;
@@ -84,6 +84,28 @@ export default function FAQ() {
             </motion.div>
           ))}
         </div>
+
+        {/* Still have questions block */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-16 max-w-2xl mx-auto text-center bg-slate-50 border border-slate-100 rounded-3xl p-8"
+        >
+          <h4 className="text-xl font-bold text-primary mb-3">Still have questions?</h4>
+          <p className="text-slate-500 font-light text-sm mb-6">
+            Our facilities coordinator is ready to provide customized answers for your specific property needs.
+          </p>
+          <button
+            onClick={() => {
+              const el = document.getElementById("contact");
+              if (el) window.scrollTo({ top: el.offsetTop - 80, behavior: "smooth" });
+            }}
+            className="btn btn-blue inline-flex items-center justify-center shadow-sm"
+          >
+            Contact Us
+          </button>
+        </motion.div>
       </div>
     </section>
   );

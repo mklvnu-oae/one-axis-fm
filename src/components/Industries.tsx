@@ -100,10 +100,10 @@ export default function Industries() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="glass-card bg-slate-50/50 hover:bg-white p-6 rounded-2xl border border-slate-100 flex gap-4 items-start cursor-default"
+                className={`group p-6 rounded-2xl border border-slate-100 flex gap-5 items-start cursor-default transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-primary/20 ${index % 2 === 0 ? "bg-white" : "bg-slate-50"}`}
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center text-white flex-shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-105">
-                  <IndIcon className="w-6 h-6 text-white" />
+                <div className="w-14 h-14 rounded-2xl bg-primary/5 border border-primary/10 flex items-center justify-center text-primary flex-shrink-0 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:-rotate-6">
+                  <IndIcon className="w-7 h-7" />
                 </div>
                 <div className="space-y-1">
                   <h4 className="text-base font-bold text-primary">{ind.name}</h4>

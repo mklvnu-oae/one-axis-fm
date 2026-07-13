@@ -11,6 +11,7 @@ interface PriceCard {
   details: string[];
   ctaText: string;
   isCustom?: boolean;
+  isPopular?: boolean;
 }
 
 export default function Pricing() {
@@ -144,11 +145,21 @@ export default function Pricing() {
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="glass-card bg-white hover:bg-white/95 border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md h-full relative"
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className={`relative bg-white rounded-[30px] p-8 xl:p-10 border transition-all duration-300 flex flex-col h-full ${
+                  plan.isPopular
+                    ? "border-secondary/50 shadow-2xl shadow-secondary/10 scale-100 lg:scale-[1.05] z-10"
+                    : "border-slate-200 shadow-lg hover:shadow-xl hover:border-slate-300"
+                }`}
               >
-                <div>
+                {plan.isPopular && (
+                  <div className="absolute top-0 inset-x-0 flex justify-center -translate-y-1/2">
+                    <span className="bg-gradient-secondary text-white text-[10px] uppercase tracking-widest font-bold py-1.5 px-6 rounded-full shadow-lg border border-white/20">
+                      Most Popular
+                    </span>
+                  </div>
+                )}  <div>
                   <div className="flex items-center justify-between mb-6">
                     <h4 className="text-lg font-bold text-primary">{plan.title}</h4>
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
@@ -200,7 +211,7 @@ export default function Pricing() {
           <div>
             <h5 className="text-sm font-bold text-primary mb-1">Pricing Variables Notice</h5>
             <p className="text-slate-600 text-xs font-medium leading-relaxed">
-              All prices are exclusive of applicable taxes (GST, etc.). Final pricing depends on manpower requirement, working hours, site location, chemical/machinery scope, and specific SLA criteria. Contact us for a precise custom quote.
+              *All prices are indicative, exclude applicable taxes, and may vary based on manpower requirement, site conditions, working hours, and scope of work. Contact us for a precise custom quote.
             </p>
           </div>
         </div>

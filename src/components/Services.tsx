@@ -179,7 +179,7 @@ export default function Services() {
                 <div>
                   {/* Service image if available, else decorative icon placeholder */}
                   {service.image ? (
-                    <div className="relative h-48 w-full overflow-hidden">
+                    <div className="relative h-64 w-full overflow-hidden">
                       <Image
                         src={service.image}
                         alt={service.title}
@@ -208,8 +208,8 @@ export default function Services() {
                     </h4>
 
                     {/* Pricing Badge */}
-                    <div className="inline-flex items-center bg-secondary/10 border border-secondary/25 px-3 py-1 rounded-md text-xs font-bold text-secondary mb-4">
-                      {service.price}
+                    <div className="inline-flex items-center bg-slate-100 px-3 py-1.5 rounded-lg text-[11px] uppercase tracking-wider font-bold text-slate-600 mb-4">
+                      Starting from <span className="text-secondary ml-1">{service.price}</span>
                     </div>
 
                     <p className="text-slate-600 text-sm font-light leading-relaxed mb-6">
@@ -231,10 +231,10 @@ export default function Services() {
                 <div className="p-6 pt-0 mt-auto">
                   <button
                     onClick={handleScrollToContact}
-                    className="font-bold text-primary group-hover:text-secondary transition-colors inline-flex items-center gap-1.5 text-sm"
+                    className="w-full py-3 px-4 rounded-xl font-bold bg-primary/5 text-primary hover:bg-primary hover:text-white transition-colors duration-300 inline-flex justify-center items-center gap-2 group/btn"
                   >
-                    Get Details
-                    <ArrowUpRight className="w-4 h-4" />
+                    Learn More
+                    <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                   </button>
                 </div>
               </motion.div>
