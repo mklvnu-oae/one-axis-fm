@@ -80,9 +80,9 @@ export default function AboutUs() {
   const ActiveIcon = activeTabData.icon;
 
   const stats = [
-    { icon: Building, value: "150+", label: "Clients" },
-    { icon: Users, value: "1,500+", label: "Staff" },
-    { icon: CheckCircle, value: "3,000+", label: "Projects" },
+    { icon: Building, value: "10+", label: "Clients" },
+    { icon: Users, value: "50+", label: "Staff" },
+    { icon: CheckCircle, value: "100+", label: "Projects" },
   ];
 
   return (
