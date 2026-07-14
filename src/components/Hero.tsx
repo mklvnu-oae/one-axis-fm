@@ -72,11 +72,11 @@ export default function Hero() {
           priority
           className="object-cover object-center opacity-30 select-none pointer-events-none"
         />
-        {/* Dual radial gradients from reference */}
+        {/* Neutral radial gradients for a cleaner look */}
         <div 
           className="absolute inset-0"
           style={{
-            background: "radial-gradient(circle at 50% 55%, rgba(15, 118, 110, 0.4) 0%, transparent 60%), radial-gradient(circle at 90% 20%, rgba(249, 115, 22, 0.1) 0%, transparent 50%)"
+            background: "radial-gradient(circle at 50% 55%, rgba(0, 0, 0, 0.4) 0%, transparent 60%), radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%)"
           }}
         />
       </div>
@@ -99,11 +99,7 @@ export default function Hero() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="hero-glass-card fm-glass shimmer-card max-w-4xl mx-auto text-center p-8 sm:p-12 lg:p-16 rounded-[30px] flex flex-col gap-8 relative overflow-hidden"
-          style={{
-            background: "linear-gradient(145deg, rgba(15, 118, 110, 0.2) 0%, rgba(15, 23, 42, 0.35) 100%)",
-            borderColor: "rgba(249, 115, 22, 0.25)"
-          }}
+          className="max-w-4xl mx-auto text-center p-8 sm:p-12 lg:p-16 rounded-[30px] flex flex-col gap-8 relative overflow-hidden backdrop-blur-md bg-white/[0.03] border border-white/10 shadow-2xl"
         >
           {/* Tagline Badge */}
           <motion.div

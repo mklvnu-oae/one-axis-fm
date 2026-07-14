@@ -18,7 +18,6 @@ const navItems: NavItem[] = [
   { name: "Industries", href: "#industries", id: "industries" },
   { name: "Why Choose Us", href: "#why-choose-us", id: "why-choose-us" },
   { name: "Process", href: "#process", id: "process" },
-  { name: "Pricing", href: "#pricing", id: "pricing" },
   { name: "Testimonials", href: "#testimonials", id: "testimonials" },
   { name: "FAQ", href: "#faq", id: "faq" },
 ];

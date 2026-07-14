@@ -5,7 +5,6 @@ import Services from "@/components/Services";
 import Industries from "@/components/Industries";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import WorkingProcess from "@/components/WorkingProcess";
-import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import ContactUs from "@/components/ContactUs";
@@ -64,15 +63,7 @@ export default function Home() {
         {/* Section 6: Process Timeline */}
         <WorkingProcess />
 
-        {/* Section 7: Base Pricing plans & variables disclaimer */}
-        <Pricing />
-
-        {/* CTA 2: After Pricing */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
-          <SectionCTA />
-        </div>
-
-        {/* Section 8: Client Testimonials */}
+        {/* Section 7: Client Testimonials */}
         <Testimonials />
 
         {/* Section 9: Accordion FAQs */}
